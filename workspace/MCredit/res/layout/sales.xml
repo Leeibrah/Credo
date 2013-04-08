@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgrd5"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageView
+            android:id="@+id/home_btn"
+            style="@style/TitleBarAction"
+            android:onClick="onClick"
+            android:src="@drawable/title_home" 
+            />
+		<TextView
+            style="@style/TitleBarText"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.91"
+            android:text="@string/credit_header"
+            android:textSize="@dimen/text_size_larger" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            style="@style/TitleBarAction"
+            android:onClick="onClick" />
+    </LinearLayout>
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp" />
+
+</LinearLayout>

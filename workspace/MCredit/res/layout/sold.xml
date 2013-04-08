@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd5"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageView
+            android:id="@+id/home_btn"
+            style="@style/TitleBarAction"
+            android:onClick="onClick"
+            android:src="@drawable/title_home" />
+
+        
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.91"
+            android:text="@string/credit_header"
+            android:textSize="@dimen/text_size_larger" />
+
+
+        <ImageView
+            android:id="@+id/search_btn"
+            style="@style/TitleBarAction"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ad_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cards_sold" />
+
+            <EditText           
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <requestFocus />
+            </EditText>           
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+
+		    <Button
+		        android:id="@+id/submit_button"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_weight="1"
+		        android:text="@string/submit" />
+
+		    <Button
+		        android:id="@+id/exit_button"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onClick"
+		        android:text="@string/exit" />
+		</LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
